@@ -44,6 +44,54 @@ main {
   align-items: center;
   cursor: pointer;
   background-color: white;
+  position: relative;
+}
+
+/* Dot styles for dice */
+.dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #333;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-left {
+  top: 20%;
+  left: 20%;
+}
+
+.top-right {
+  top: 20%;
+  right: 20%;
+}
+
+.middle-left {
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+}
+
+.middle-right {
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%);
+}
+
+.bottom-left {
+  bottom: 20%;
+  left: 20%;
+}
+
+.bottom-right {
+  bottom: 20%;
+  right: 20%;
 }
 
 .die-num {
@@ -51,7 +99,7 @@ main {
 }
 .roll-dice {
   height: 50px;
-  width: 100px;
+  width: 150px;
   border: none;
   border-radius: 6px;
   background-color: #5035FF;
